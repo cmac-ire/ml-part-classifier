@@ -1,5 +1,3 @@
-import matplotlib.pyplot as plt
-import pandas as pd
 from keras import layers, models, optimizers, callbacks
 from keras.preprocessing.image import ImageDataGenerator
 from keras.applications import ResNet50V2
