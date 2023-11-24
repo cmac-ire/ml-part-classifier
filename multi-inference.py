@@ -1,6 +1,5 @@
 import tensorflow as tf
 from tensorflow import keras
-import matplotlib.pyplot as plt
 import os
 
 model = keras.models.load_model('save_at_5.keras')
@@ -19,7 +18,6 @@ for filename in os.listdir(folder_path):
         img_path = os.path.join(folder_path, filename)
 
         img = keras.utils.load_img(img_path, target_size=(180, 180))
-        plt.imshow(img)
 
         img_array = keras.utils.img_to_array(img)
         img_array = tf.expand_dims(img_array, 0) 
