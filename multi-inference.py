@@ -5,7 +5,7 @@ import os
 
 model = keras.models.load_model('save_at_5.keras')
 
-folder_path = r"C:\Users\cfarr\Desktop\Github Projects\fyp-ml"
+folder_path = r"C:\Users\cfarr\Desktop\Github Projects\fyp-ml\test-keras-images"
 
 class_labels = ['dog', 'cat']
 threshold = 0.8
@@ -15,7 +15,7 @@ predicted_cat = []
 unrecognized = []
 
 for filename in os.listdir(folder_path):
-    if filename.endswith(".jpg") or filename.endswith(".jpeg") or filename.endswith(".png") or filename.endswith(".webp") or filename.endswith(".avif"):
+    if filename.endswith(".jpg") or filename.endswith(".jpeg") or filename.endswith(".png"):
         img_path = os.path.join(folder_path, filename)
 
         img = keras.utils.load_img(img_path, target_size=(180, 180))
