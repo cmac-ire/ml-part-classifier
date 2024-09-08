@@ -3,8 +3,8 @@ from keras.preprocessing.image import ImageDataGenerator
 from keras.applications import ResNet50V2
 
 # Prepare the Dataset
-train_dir = r'C:\Users\cfarr\Desktop\in-progress\dataset\train'
-validation_dir = r'C:\Users\cfarr\Desktop\in-progress\dataset\val'
+train_dir = r'C:\Users\cfarr\Desktop\fyp_pi_code1\fyp_realtime\train'
+validation_dir = r'C:\Users\cfarr\Desktop\fyp_pi_code1\fyp_realtime\val'
 
 # Data augmentation
 train_datagen = ImageDataGenerator(
@@ -68,7 +68,7 @@ early_stopping = callbacks.EarlyStopping(
 history = model.fit(
         train_generator,
         steps_per_epoch=len(train_generator),
-        epochs=100,  # Increase epochs for more training
+        epochs=14,  # Increase epochs for more training
         validation_data=validation_generator,
         validation_steps=len(validation_generator),
         callbacks=[early_stopping],
@@ -76,4 +76,4 @@ history = model.fit(
     )
 
 # Save the model
-model.save('FYP.h5')
+model.save('FYP_iteration1.h5')

@@ -1,0 +1,7 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type='text/xsl' href='MassDataHandlerLogFile.xsl'?>
+<LogFile titleName="CVS_ASSIGNMENT_TAGTABLE.xml" projectName="C:\Users\k00259724.TUSSTUDENT\Desktop\CVS_ASSIGNMENT_TAGTABLE.xlsx" typeText="Type" messageText="Message" timeText="Time">
+  <LogEntry type="Error" dateTime="10:18:07 AM">
+    <Message>Worksheet "PLC Tags" does not have the required format.</Message>
+  </LogEntry>
+</LogFile>
