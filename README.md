@@ -1,5 +1,7 @@
 # FYP-ML: Machine Learning Part Classification System
 
+*This project was developed with the help of AI tools, using them as a guide, assistant, and for significant code generation. All final creative decisions and deployments reflect my own work and intentions.*
+
 ## Overview
 
 This repository contains the code and documentation for the final year project (FYP) titled **Machine Learning Part Classification System**. The project integrates machine learning techniques with industrial automation to classify parts efficiently, leveraging both software and hardware components. 
